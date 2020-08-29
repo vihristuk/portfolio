@@ -273,7 +273,7 @@
       <div class="container">
         <h2 class="section-title">Свяжитесь со мной</h2>
         <div class="contacts-block">
-          <form action="#" class="contacts-form">
+          <form action="mail.php" method="POST" class="contacts-form">
             <h4 class="form-title">
               Можете просто оставить заявку, я позвоню вам сегодня
             </h4>
@@ -281,13 +281,23 @@
               type="text"
               class="input input-name"
               placeholder="Ваше имя"
+              name="user_name"
             />
             <input
               type="text"
               class="input input-phone"
               placeholder="Ваш телефон"
+              name="user_phone"
             />
-            <button class="button form-button">Бесплатная консультация</button>
+            <input
+              type="text"
+              class="input input-email"
+              placeholder="Ваша почта"
+              name="user_email"
+            />
+            <button class="button form-button" type="submit">
+              Бесплатная консультация
+            </button>
           </form>
 
           <div class="contacts-text">
